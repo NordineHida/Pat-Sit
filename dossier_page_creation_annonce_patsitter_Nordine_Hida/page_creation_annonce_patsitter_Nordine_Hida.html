@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_creation_annonce_patsitter_Nordine_Hida.css">
+    <link rel="shortcut icon" href="../image/logo_noir_petit.png" type="image/x-icon">
+    <title>Pat'Sit</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="../image/logo_noir_grand.png" alt="logo">
+            <div class="titre">Pat'Sit</div>
+            <div class="links">
+                <ul>
+                    <li class="boutonnav"><a href="#">Annonce</a></li> 
+                    <li class="boutonnav"><a href="../dossier_page_creation_annonce_patsitter_Nordine_Hida/page_creation_annonce_patsitter_Nordine_Hida.html">Devenez un Pat'Sitter</a></li>
+                    <li class="boutonnav"><a href="../dossier_page_creation_annonce_patsitting_Laszlo_Duszynski/page_creation_annonce_patsitting_Laszlo_Duszynski.html">Cherchez un Pat'Sitter</a></li>  
+                </ul>
+            </div>
+
+            <div id="menuToggle">
+                <input type="checkbox" >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                  <li><a href="#">Annonce</a></li>
+                  <li><a href="../dossier_page_creation_annonce_patsitter_Nordine_Hida/page_creation_annonce_patsitter_Nordine_Hida.html">Devenez un Pat'Sitter</a></li>
+                  <li><a href="../dossier_page_creation_annonce_patsitting_Laszlo_Duszynski/page_creation_annonce_patsitting_Laszlo_Duszynski.html">Cherchez un Pat'Sitter</a></li>
+                </ul>
+              </div>
+        </nav>
+    </header>
+
+
+
+    
+    <div class="container-fluid">
+        <form id="formulaire" >
+            <fieldset class="bordureformulaire"> <legend id="creation" class="bordureformulaire">Création de votre annonce de Pat'Sitter</legend>    
+                <div id="profil" class="partie">
+                    <div class="row rowcategorie">
+                        <img src="../image/avatar.png" alt="Icône d'avatar" class="icontitre">
+                        <h4 class="categorie partie">Profil :</h4>
+                    </div>
+                    <div class="alignement ">
+                        <div class="pic-holder my-4">
+                            <img id="profilePic" class="pic img-fluid" src="../image/add_profil_picture.png" alt="Icon du bouton pour ajouter votre photo de profil">
+                            <Input class="uploadProfileInput" type="file" name="profile_pic" id="newProfilePhoto" accept="image/*" style="opacity: 0;" >
+                            <label for="newProfilePhoto" class="upload-file-block">Ajoutez votre <br > Photo</label>
+                        </div>
+                        <div class="descphoto">
+                            <h5 class="informationsaisi text-center my-sm-3">Vos photos sont importantes pour mettre en confiance un propriétaire et lui donner envie de confier son animal. </h5>
+                        </div>
+                    </div>
+                    <label for="aPropos" class="titrezonetexte">A propos de vous</label>
+                    <textarea id="aPropos" name="aPropos" class="zonetexte" placeholder="Présentez-vous en quelques mots." required ></textarea>
+                    <label for="motivation" class="titrezonetexte">Vos motivation et vos expériences</label>
+                    <textarea id="motivation" name="aPropos" class="zonetexte" placeholder="Expliquez pourquoi vous souhaitez garder des animaux, et si vous en avez eu vos expériences avec les animaux de compagnie." rows="6" required ></textarea>
+                </div>
+
+
+
+
+                <div class="localisation partie">
+                    <div class="row rowcategorie">
+                        <img src="../image/carte.png" alt="Icône de carte" class="icontitre">
+                        <h4 class="categorie partie ">Localisation :</h4>
+                    </div>
+                        <div class="flex-row">
+                            <label for="adresse" class="titrezonetexte">Adresse</label>
+                            <textarea id="adresse" name="adresse" class="zonetexteadresse" placeholder="Adresse" required ></textarea>
+                        </div>
+
+                        <div class="row">  
+                            <div class="row">
+                                <label for="codepostal" class="titrezonetexte locate">Code postal</label>
+                                <input id="codepostal" type="number" class="zonetextecodepostal" name="codepostal" placeholder="Code postal" required >
+                            </div>
+                            <div class="row">
+                                <label for="ville" class="titrezonetexte locate">Ville</label>
+                                <textarea id="ville" name="ville" class="zonetexteville" placeholder="Ville" required ></textarea>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="distanceMax partie">
+                    <h4 class="categorie partie">Distance maximale :</h4>
+                    
+                    <div class="d-flex justify-content-center row slider">
+                        <input type="range" value="10" min="1" max="99" oninput="this.nextElementSibling.value = this.value">
+                        <output class="kilometre ">10</output>
+                        <div class="kilometretext">km</div>
+                    </div>
+                </div>
+
+                <div id="services" class="container-fluid">
+                    <div class="row rowcategorie">
+                        <img src="../image/check_list.png" alt="Icône de check list" class="icontitre">
+                        <h4 class="categorie partie titretropgrand my-0">Service(s) proposé(s) :</h4>
+                    </div>
+                    <div class="partie">
+                        <div class="form-check-inline partie alignementmobile">
+                            <input type="checkbox" id="iconpromenade" class="" >
+                            <label class="icon2promenade" for="iconpromenade"><img src="../image/promener_le_chien.png" alt="Bouton pour devenir Promeneur" class="imagepromenade"></label>
+                            <p class="titreservice">Promeneur</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="form-check-inline">
+                                <input class="checkbox" type="checkbox" id="regulier" >
+                                <label for="regulier" class="checkbox candara">Régulier</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="checkbox" type="checkbox" id="occasionnel">
+                                <label for="occasionnel" class="checkbox candara">Occasionnel</label>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="traitseparation"></div>
+
+
+                    <div class="partie">
+                            <div class="form-check-inline partie alignementmobile">
+                                <input type="checkbox" id="iconmaison" >
+                                <label class="icon2maison" for="iconmaison"><img src="../image/maison.png" alt="Bouton pour la garde chez le Pat'Sitter" class="maison"></label>
+                                <p class="titreservice">Garde chez le Pat'Sitter (vous)</p>
+                            </div>
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maison" value="">
+                                <label class="form-check-input candara" for="maison">Maison</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="appartement" value="">
+                                <label class="form-check-input candara" for="appartement">Appartement</label>
+                            </div>
+                            <div class="col-auto"></div>
+                            <div class="col-auto"></div>
+                            <div class="col-auto"></div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="form-check-inline" name="jardin" id="jardin">
+                                <label class="form-check-input candara" for="jardin">Jardin</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="alignement">
+                        <select name="cadrehome" id="cadrehome">
+                            <option selected value="default">Votre cadre de vie</option>
+                            <option value="campagne">Campagne</option>
+                            <option value="urbain">Urbain</option>
+                            <option value="periurbain">Peri-urbain</option>
+                            <option value="mer">Mer</option>
+                            <option value="montagne">Montagne</option>
+                        </select>
+                        <label for="surfacehabitable"></label>
+                        <input type="number" name="surfacehabitable" id="surfacehabitable" placeholder="Surface Habitable (m²)" class="zonetexte">
+                    </div>
+
+
+
+
+                    <div class="traitseparation"></div>
+
+
+
+
+
+                    <div class="partie alignementmobile">
+                        <div class="partie form-check-inline alignementmobile">
+                            <input type="checkbox" id="iconmaisonproprietaire">
+                            <label class="iconmaisonproprietaire" for="iconmaisonproprietaire"><img src="../image/maison_proprietaire.png" alt="Bouton pour la garde chez le propriétaire de l'animal" class="maisonproprietaire"></label>
+                            <p class="titreservice">Garde chez le propriétaire</p>
+                        </div>
+
+                        <div class="traitseparationmobile"></div>
+
+
+                        <div class="partie form-check-inline alignementmobile"> 
+                            <input type="checkbox" id="iconvoiture" class="" >
+                            <label class="iconvoiture" for="iconvoiture"><img src="../image/voiture.png" alt="Bouton si vous possédez une voiture" class="voiture"></label>
+                            <p class="titreservice">Véhiculé</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                <div class="partie">
+                    <div class="row rowcategorie">
+                        <img src="../image/patte.png" alt="Icône de patte d'animal" class="icontitre">
+                        <h4 class="categorie partie titretropgrand my-0">Quel race d'animal pouvez-vous garder ?</h4>
+                    </div>
+                    <ul class="d-flex justify-content-center row">
+                        <li>
+                            <input type="checkbox" id="iconchien">
+                            <label class="iconchien" for="iconchien"><img src="../image/Icon_Animaux/chien.png" alt="Bouton pour garder des chiens"></label>
+                            <p class="nomanimal">Chien</p>
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" id="iconchat" >
+                            <label class="iconchat" for="iconchat"><img src="../image/Icon_Animaux/chat.png" alt="Bouton pour garder des chats"></label>
+                            <p class="nomanimal">Chat</p>
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" id="iconhamster">
+                            <label class="iconhamster" for="iconhamster"><img src="../image/Icon_Animaux/hamster.png" alt="Bouton pour garder des hamsters"></label>
+                            <p class="nomanimal">Hamster</p>
+                        </li>
+                    
+                        <li>
+                            <input type="checkbox" id="iconlapin"  >
+                            <label class="iconlapin" for="iconlapin"><img src="../image/Icon_Animaux/lapin.png" alt="Bouton pour garder des lapins"></label>
+                            <p class="nomanimal">Lapin</p>
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" id="iconpoisson" >
+                            <label class="iconpoisson" for="iconpoisson"><img src="../image/Icon_Animaux/poisson.png" alt="Bouton pour garder des poissons"></label>
+                            <p class="nomanimal">Poisson</p>
+                        </li>
+                            
+                        <li>
+                            <input type="checkbox" id="iconoiseau" >
+                            <label class="iconoiseau" for="iconoiseau"><img src="../image/Icon_Animaux/oiseau.png" alt="Bouton pour garder des oiseaux"></label>
+                            <p class="nomanimal">Oiseau</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+                <div class="tarif partie">
+                    <div class="row rowcategorie">
+                        <img src="../image/tirelire.png" alt="Categorie des tarifs représenté par une tirelire" class="icontitre">
+                        <h4 class="categorie partie">Vos tarifs</h4>
+                    </div>
+                    <div class="row alignement">
+                        <div class="justify-content-center">
+                            <label for="tarif"></label>
+                            <input type="number" name="tarif" placeholder="Saisir vos tarifs (€)" class="euro" id="tarif" required>
+                            <select name="honoraire" id="honoraire" class="euro">
+                                <option value="heure">Par heure</option>
+                                <option value="jour">Par jour</option>
+                                <option value="semaine">Par semaine</option>
+                                <option value="promenade">Par promenade</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="partie">
+                    <div class="row rowcategorie">
+                        <img src="../image/calendrier.png" alt="Icône de calendrier" class="icontitre">
+                        <h4 class="categorie partie ">Vos disponibilités :</h4>
+                    </div>
+                    <div class="date alignement">
+                        <label for="datedebut" class="date">Du</label>
+                        <input type="date" name="datedebut" id="datedebut" class="date" required> <br>
+                        <label for="datefin" class="date">au</label>
+                        <input type="date" name="datefin" id="datefin" class="date" required>
+                    </div>
+                </div>
+
+                <div class="row submit alignementsubmit">
+                    <input type="submit" value="Envoyer" class="boutonenvoyer ">
+                    <input type="submit" value="Continuer plus tard" class="boutonenvoyer ">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+    
+                <div class="footer-col">
+                    <p class="p5" id="textavis">Les avis</p>
+                        <div class="avis">
+                            <div class="border">
+                                <div class="col">
+                                    <img class="pdp" src="../image/pdp.jpg" alt="photo de profil utilisateur">
+                                    <div class="name">Frédérique Rousseau</div>
+                                    <div class="stars">
+                                        <img class="pattes" src="../image/pattes.png" alt="Patte de notation pleine">
+                                        <img class="pattes" src="../image/pattes.png" alt="Patte de notation pleine">
+                                        <img class="pattes" src="../image/pattes.png" alt="Patte de notation pleine">
+                                        <img class="pattes0" src="../image/pattes0.png" alt="Patte de notation vide">
+                                        <img class="pattes0" src="../image/pattes0.png" alt="Patte de notation vide">
+                                    </div>
+                                    <p>J'adore ce site, venez svp</p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+                    
+    
+                <div class="footer-col">
+                    <p class="p5">Notez-nous</p>
+                        <img class="notation" src="../image/notation.png" alt="bouton pour rédiger un avis">
+                </div>
+    
+                <div class="footer-col">
+                    <p class="p5">En savoir plus</p>
+                    <ul>
+                        <li><a href="#">Nous contacter</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Confidentialité et cookies</a></li>
+                        <li><a href="#">2022 Pat'Sit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="p5">follow us</p>
+                    <div class="social-links">
+                        <img class="reseaux" src="../image/facebook.png" alt="bouton pour visiter la page facebook">
+                        <img class="reseaux" src="../image/instagram.png" alt="bouton pour visiter la page instagram'">
+                        <img class="reseaux" src="../image/twitter.png" alt="bouton pour visiter la page twitter">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

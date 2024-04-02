@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dossier_page_inscription_Kassandra_Portka/css_inscription_Kassandra_Portka.css">
+    <title>Pat'Sit</title>
+    <link rel="shortcut icon" href="image/logo_noir_petit.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<!--...............................................Hearder....................................-->
+<header>
+    <nav class="navbar">
+        <img class="logo" src="image/logo_noir_grand.png" alt="logo">
+        <div class="titre">Pat'Sit</div>
+        <div class="links">
+            <ul>
+                <li class="boutonnav"><a href="#">Annonce</a></li> 
+                <li class="boutonnav"><a href="../dossier_page_creation_annonce_patsitter_Nordine_Hida/page_creation_annonce_patsitter_Nordine_Hida.html">Devenez un Pat'Sitter</a></li>
+                <li class="boutonnav"><a href="../dossier_page_creation_annonce_patsitting_Laszlo_Duszynski/page_creation_annonce_patsitting_Laszlo_Duszynski.html">Cherchez un Pat'Sitter</a></li>  
+            </ul>
+        </div>
+    <!--...............................................Menu mobile...............................-->
+        <div id="menuToggle">
+
+            <input type="checkbox">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <li><a href="#">Annonce</a></li>
+                <li><a href="../dossier_page_creation_annonce_patsitter_Nordine_Hida/page_creation_annonce_patsitter_Nordine_Hida.html">Devenez un Pat'Sitter</a></li>
+                <li><a href="../dossier_page_creation_annonce_patsitting_Laszlo_Duszynski/page_creation_annonce_patsitting_Laszlo_Duszynski.html">Cherchez un Pat'Sitter</a></li>
+            </ul>
+          </div>
+    </nav>
+</header>
+
+<!--...............................................Intro site...............................-->
+    <div class="intro">
+        <p>Bienvenue sur Pat'Sit !</p>
+    </div>
+
+<!--...............................................Description...............................-->
+    <div class="description">
+        <p>Notre site va vous permettre de faire garder votre animal ou bien de garder un animal.
+        Inscrivez-vous pour découvrir nos annonces :)</p>
+    </div>
+
+<!--...............................................Inscription...............................-->
+    <div class="inscription">
+        <form>
+            <p id="p1">Inscription</p>
+            <p id="p2">Renseignez les informations suivantes :</p>
+
+            <label for="prenom"></label>
+            <input type="text" placeholder="Prénom" id="prenom"><br>
+
+            <label for="nom"></label>
+            <input type="text" placeholder="Nom" id="nom"><br>
+
+            <label for="role"></label>
+            <select name="role" id="role">
+                <option value="Choix">Choisissez votre rôle sur le site</option>
+                <option value="Patsitter">Pat'Sitter</option>
+                <option value="Garde">Particulier cherchant à faire garder son animal</option>
+                <option value="Visiteur">Visiteur</option>
+                <option value="Nondef">Non défini</option>
+            </select><br>
+
+            <label for="date">Entrez votre date de naissance :</label>
+            <input type="date" id="date"><br>
+            
+            <label for="ville"></label>
+            <input type="text" placeholder="Entrez votre ville de résidence" id="ville"><br>
+
+            <label for="email"></label>
+            <input type="email" placeholder="Email" id="email"><br>
+
+            <label for="mdp"></label>
+            <input type="password" placeholder="Mot de passe" id="mdp"><br>
+            <label for="mdpbox">Afficher le mot de passe </label>
+            <input type="checkbox" id="mdpbox"><br>
+
+            <img class="CAPTCHA" src="image/reCaptcha.png" alt="CAPTCHA">
+
+            <label for="creacompte"></label>
+            <input type="button" value="Créer un compte" id="creacompte"><br>
+            <p id="p3"> Vous avez déjà un compte ? </p>
+            <label for="connexion"></label>
+            <input type="button" value="Connexion" id="connexion"><br>
+        </form>
+    </div>
+
+<!--...............................................Intro annonce...............................-->
+    <div class="intro_annonce">
+        <p id="p4">Rejoignez notre communauté de Pat’Sitter</p>
+    </div>
+
+<!--...............................................Annonce...............................-->
+<div class="wrapper-grid">
+    <div class="annonce">
+      <img src='image/pdp.jpg' alt='profile image' class="profile-img">
+      <h1 class="name">Laszlo</h1>
+      <p class="description">Bonjour à tous, je suis ici pour devenir Pat'Sitter, n'hésitez pas à me contacter ! kiss kiss</p>
+    </div>
+
+    <div class="annonce">
+        <img src='image/pdp.jpg' alt='profile image' class="profile-img">
+      <p class="name">Kassandra</p>
+      <p class="description">Bonjour à tous, je suis ici pour devenir Pat'Sitter, n'hésitez pas à me contacter ! kiss kiss</p>
+    </div>
+
+    <div class="annonce">
+        <img src='image/pdp.jpg' alt='profile image' class="profile-img">
+      <p class="name">Nordine</p>
+      <p class="description">Bonjour à tous, je suis ici pour devenir Pat'Sitter, n'hésitez pas à me contacter ! kiss kiss</p>
+    </div>
+  </div>
+<!--...............................................Pied de page...............................-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="footer-col">
+                <p class="p5" id="textavis">Les avis</p>
+                    <div class="avis">
+                        <div class="border">
+                            <div class="col">
+                                <img class="pdp" src="image/pdp.jpg" alt="photo de profil utilisateur">
+                                <div class="name">Frédérique Rousseau</div>
+                                <div class="stars">
+                                    <img class="pattes" src="image/pattes.png" alt="Patte de notation pleine">
+                                    <img class="pattes" src="image/pattes.png" alt="Patte de notation pleine">
+                                    <img class="pattes" src="image/pattes.png" alt="Patte de notation pleine">
+                                    <img class="pattes0" src="image/pattes.png" alt="Patte de notation pleine">
+                                    <img class="pattes0" src="image/pattes0.png" alt="Patte de notation vide">
+                                </div>
+                                <p>J'adore ce site, venez s'il vous plaît</p>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+                
+
+            <div class="footer-col">
+                <p class="p5">Notez-nous</p>
+                    <img class="notation" src="image/notation.png" alt="bouton pour rédiger un avis">
+            </div>
+
+            <div class="footer-col">
+                <p class="p5">En savoir plus</p>
+                <ul>
+                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Confidentialité et cookies</a></li>
+                    <li><a href="#">2022 Pat'Sit</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <p class="p5">follow us</p>
+                <div class="social-links">
+                    <img class="reseaux" src="image/facebook.png" alt="bouton pour visiter le facebook">
+                    <img class="reseaux" src="image/instagram.png" alt="bouton pour visiter l'instagram'">
+                    <img class="reseaux" src="image/twitter.png" alt="bouton pour visiter le twitter">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
